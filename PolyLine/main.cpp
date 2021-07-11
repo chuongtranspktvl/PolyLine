@@ -2,10 +2,17 @@
 //
 
 #include <iostream>
-
+#include "Point.cpp"
+#include "PolyLine.cpp"
 int main()
 {
-    std::cout << "Hello World!\n";
+    PolyLine polyline;
+    polyline.appendPoint(Point(1, 1));
+    polyline.appendPoint(Point(2, 3));
+    polyline.appendPoint(3, 0);
+    polyline.appendPoint(4, 2);
+    cout << polyline.getLength()<<endl;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
